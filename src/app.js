@@ -29,8 +29,8 @@ app.use('/', userRouter);
 connectDB().then(()=>{
     console.log("Database Connected Successfully");
 
-    app.listen(3001, ()=>{
-    console.log("server running succeessfully on port 3001.....");
+    app.listen(7777, ()=>{
+    console.log("server running succeessfully on port 7777.....");
 })
 }).catch(err=>{
     console.log("Database cannot be connected!!!");   
