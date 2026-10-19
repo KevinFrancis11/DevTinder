@@ -33,5 +33,7 @@ connectDB().then(()=>{
     console.log("server running succeessfully on port 7777.....");
 })
 }).catch(err=>{
-    console.log("Database cannot be connected!!!");   
+    console.log("Database cannot be connected!!!");
+    
+    console.error("Actual error:", err);   
 })
