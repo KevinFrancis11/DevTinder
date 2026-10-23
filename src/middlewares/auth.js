@@ -14,7 +14,7 @@ try{
     }
 
     //validate the token
-    const decodedToken = await jwt.verify(Token, "DEV@Tinder$967");
+    const decodedToken = await jwt.verify(Token, process.env.JWT_SECRET);
     const {_id} = decodedToken;
 
     //find the user
